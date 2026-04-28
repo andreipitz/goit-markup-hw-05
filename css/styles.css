@@ -692,7 +692,7 @@ a {
   margin-left: 16px;
 }
 .send-btn {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-style: Medium;
   font-size: 16px;
@@ -730,12 +730,12 @@ a {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover {
+.modal-container .close-btn:hover {
   background-color: #404bbf;
   border: none;
 }
 
-.close-btn:focus {
+.modal-container .close-btn:focus {
   background-color: #404bbf;
   border: none;
 }
@@ -744,11 +744,11 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover.close-svg {
+.modal-container .close-btn:hover.close-svg {
   fill: #ffffff;
 }
 
-.close-btn:focus.close-svg {
+.modal-container .close-btn:focus.close-svg {
   fill: #ffffff;
 }
 
@@ -846,7 +846,7 @@ a {
   color: #8e8f99;
 }
 
-.privacy.text {
+.privacy-text {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
