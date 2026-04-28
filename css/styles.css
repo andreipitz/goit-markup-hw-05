@@ -859,7 +859,7 @@ a {
 .check-input:checked + .checkbox-text .privacy-text {
   background-color: #404bbf;
   border: none;
-  fill: #F4F4F4; 
+  fill: #f4f4fd;
 }
 
 .privacy-link {
