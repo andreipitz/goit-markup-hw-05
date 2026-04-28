@@ -690,7 +690,7 @@ a {
   margin-left: 16px;
 }
 .send-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: Medium;
   font-size: 16px;
@@ -728,12 +728,12 @@ a {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-container .close-btn:hover {
+.close-btn:hover {
   background-color: #404bbf;
   border: none;
 }
 
-.modal-container .close-btn:focus {
+.close-btn:focus {
   background-color: #404bbf;
   border: none;
 }
@@ -742,11 +742,8 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-container .close-btn:hover.close-svg {
-  fill: #ffffff;
-}
-
-.modal-container .close-btn:focus.close-svg {
+.close-btn:hover .close-svg,
+.close-btn:focus .close-svg {
   fill: #ffffff;
 }
 
@@ -809,7 +806,7 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-svg:focus {
+.input-class:focus + .input-svg {
   fill: #4d5ae5;
 }
 
@@ -859,12 +856,18 @@ a {
   fill: transparent;
 }
 
-.check-input:checked + .privacy.text {
+.check-input:checked + .privacy-text {
   background-color: #404bbf;
   border: none;
   fill: #f4f4f4;
 }
 
-.privacy.link {
+.check-input:checked + .checkbox-svg {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4f4;
+}
+
+.privacy-link {
   color: #4d5ae5;
 }
